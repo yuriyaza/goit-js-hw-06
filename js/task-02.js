@@ -7,27 +7,15 @@ const ingredients = [
   'Condiments',
 ];
 
-const elementList = ingredients.map((element) => {
-  const itemRef = document.createElement('li');
-  itemRef.textContent = element;
-  itemRef.classList.add('item');
-  return itemRef;
+const elementsList = ingredients.map((element) => {
+  const elementRef = document.createElement('li');
+  elementRef.textContent = element;
+  elementRef.classList.add('item');
+  return elementRef;
 });
 
-const ingredientsListRef = document.querySelector('#ingredients');
-ingredientsListRef.append(...elementList);
+const ingredientsRef = document.querySelector('#ingredients');
+ingredientsRef.append(...elementsList);
 
-console.log(ingredientsListRef);
+console.log(ingredientsRef);
 
-// Альтернативний спосіб
-
-const elementListAlternate = ingredients
-  .map((element) => `<li class="item">${element}</li>`)
-  .join(' ');
-  
-const markupAlternate = `
-  <ul id="ingredients-alternative" style="color:blue">
-    ${elementListAlternate}
-  </ul>`;
-
-ingredientsListRef.insertAdjacentHTML('afterEnd', markupAlternate);
