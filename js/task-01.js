@@ -1,4 +1,4 @@
-const categoriesListRef = document.querySelectorAll('.item');
+const categoriesListRef = document.querySelectorAll('ul#categories .item');
 console.log(`Number of categories: ${categoriesListRef.length} \n\n`);
 
 categoriesListRef.forEach((element) => {

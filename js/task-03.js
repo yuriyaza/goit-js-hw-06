@@ -25,7 +25,7 @@ const galleryElements = images
   .map(createMarkup)
   .join('');
 
-const galleryRef = document.querySelector('.gallery');
+const galleryRef = document.querySelector('ul.gallery');
 galleryRef.insertAdjacentHTML('afterbegin', galleryElements);
   
 console.log(galleryRef);
