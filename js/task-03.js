@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const createMarkup = ({url, alt }) => { 
+const createMarkup = ({url, alt}) => { 
   return `
     <li class="gallery-item">
       <img class="gallery-image" src="${url}" alt="${alt}">
@@ -27,5 +27,3 @@ const galleryElements = images
 
 const galleryRef = document.querySelector('ul.gallery');
 galleryRef.insertAdjacentHTML('afterbegin', galleryElements);
-  
-console.log(galleryRef);
