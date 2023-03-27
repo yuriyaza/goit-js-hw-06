@@ -1,3 +1,5 @@
+const ingredientsRef = document.querySelector('ul#ingredients');
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -14,5 +16,4 @@ const elementsList = ingredients.map((element) => {
   return elementRef;
 });
 
-const ingredientsRef = document.querySelector('ul#ingredients');
 ingredientsRef.append(...elementsList);
